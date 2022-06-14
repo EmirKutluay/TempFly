@@ -14,11 +14,13 @@ public class FallListener implements Listener {
 
     @EventHandler
     public void onPlayerFall(EntityDamageEvent e) {
-        Player p = (Player) e.getEntity();
-        if (e.getCause() == EntityDamageEvent.DamageCause.FALL){
-            if (plugin.fallingPlayers.contains(p)){
-                e.setCancelled(true);
-                plugin.fallingPlayers.remove(p);
+        if (e.getEntity() instanceof Player){
+            Player p = (Player) e.getEntity();
+            if (e.getCause() == EntityDamageEvent.DamageCause.FALL){
+                if (plugin.fallingPlayers.contains(p)){
+                    e.setCancelled(true);
+                    plugin.fallingPlayers.remove(p);
+                }
             }
         }
     }
