@@ -1,0 +1,9 @@
+PluginPrefix: '&8[&6TempFly&8]'
+FlyPrice: 100
+FlyDuration: 60
+
+#Messages
+FlySuccessMsg: '%prefix% &eYou have successfully purchased &d%duration% &eseconds fly for &2%price%$'
+FlyNoMoneyMsg: '%prefix% &cInsufficient balance.'
+FlyAlreadyEnabled: '%prefix% &cYou already have fly enabled.'
+FlyTimeEnded: '%prefix% &dYour fly time ended, purchase another one with &6/fly'

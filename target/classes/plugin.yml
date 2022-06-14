@@ -1,0 +1,10 @@
+name: TempFly
+main: com.emiv.tempfly.TempFlyMain
+version: 1.0
+api-version: 1.19
+author: xEmir
+softdepend: [Vault]
+commands:
+  fly:
+    aliases: [tempfly, tfly]
+    description: Fly command for TempFly
